@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Battle #22</title>
+    </head>
+    <style>
+        body {
+            background: #62306D;
+        }
+
+        body::before,
+        body::after {
+            content: '';
+            width: 80px;
+            height: 160px;
+            top: 70px;
+            position: absolute;
+            background: #F7EC7D
+        }
+
+        body::before {
+            left: 120px;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 50px;
+        }
+
+        body::after {
+            left: 200px;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 50px;
+        }
+    </style>
+    <body>
+    </body>
+</html>
