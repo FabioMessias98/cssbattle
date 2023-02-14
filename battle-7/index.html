@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Battle #7</title>
+    </head>
+    <style>
+        body {
+            background: #0B2429;  
+        }
+
+        div,
+        div::before,
+        div::after {
+            width: 150px;
+            height: 150px;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            position: absolute;
+        }
+
+        div {
+            top: 75px;
+            left: 75px;
+            background: #1A4341;
+        }
+
+        div::before,
+        div::after {
+            content: '';
+            top: 0;
+        }
+
+        div::before {
+            left: 50px;
+            background: #998235;
+        }
+
+        div::after {
+            left: 100px;
+            background: #F3AC3C;
+        }
+    </style>
+    <body>
+        <div></div>
+    </body>
+</html>
