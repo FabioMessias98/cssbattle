@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Battle #22</title>
+    </head>
+    <style>
+        body {
+        background-color: #293462;
+        }
+
+        .l-head {
+            width: 200px;
+            height: 200px;
+            top: 50px;
+            left: 100px;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            overflow: hidden;
+            position: absolute;
+            background-color: #FE5F55;
+        }
+
+        .l-head__top::before,
+        .l-head__top::after {
+                content: '';
+                width: 100px;
+                height: 100px;
+                top: -50px;
+                border-radius: 50%;
+                position: absolute;
+                background-color: #FFF1C1;
+        }
+
+        .l-head__top::before {
+            left: 0;
+        }
+
+        .l-head__top::after {
+            right: 0;
+        }
+
+        .l-head__eyes::before,
+        .l-head__eyes::after {
+            content: '';
+            width: 60px;
+            height: 60px;
+            top: 90px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #FFF1C1;
+        }
+
+        .l-head__eyes::before {
+            left: 20px;
+        }
+
+        .l-head__eyes::after {
+            right: 20px;
+        }
+
+        .l-head__mouth {
+            width: 40px;
+            height: 10px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50px;
+            position: absolute;
+            background-color: #FFF1C1;
+        }
+    </style>
+    <body>
+        <div class="l-head">
+            <div class="l-head__top"></div>
+            <div class="l-head__eyes"></div>
+            <div class="l-head__mouth"></div>
+        </div>
+    </body>
+</html>
+
+
+  
